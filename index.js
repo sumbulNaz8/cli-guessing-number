@@ -1,8 +1,8 @@
-#! /usr/bin/env 
+#! /usr/bin/env node
 import inquirer from "inquirer";
 import chalk from "chalk";
 console.log(chalk.green.italic `\n\t-----------------
-                                    WELCOME TO MY SIMPLE CALCULATOR
+                                    WELCOME TO MY CLI GUESSING GAME 
                                                                         -----------------------------------\n`);
 do {
     const randomNumber = Math.floor(Math.random() * 7 + 1);
@@ -17,7 +17,7 @@ do {
         console.log(chalk.bgMagentaBright("Congratulation ! you guessed  right number."));
     }
     else {
-        console.log(chalk.bgRed("you guessed wrong number"));
+        console.log(chalk.red("you guessed wrong number"));
     }
     let ans = await inquirer.prompt([
         {
@@ -32,10 +32,9 @@ do {
         break;
     }
 } while (true);
-/*echo "# cli-guessing-number" >> README.md
-git init
+/*git init
 git add README.md
 git commit -m "first commit"
 git branch -M main
-git remote add origin https://github.com/sumbulNaz8/cli-guessing-number.git
-git push -u origin main*/
+git remote add origin https://github.com/sumbulNaz8/word-counter.git
+git push -u origin main*/ 

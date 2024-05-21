@@ -5,7 +5,7 @@ import inquirer from "inquirer";
 import chalk    from "chalk";
 
 console.log(chalk.green.italic`\n\t-----------------
-                                    WELCOME TO MY SIMPLE CALCULATOR
+                                    WELCOME TO MY CLI GUESSING GAME 
                                                                         -----------------------------------\n`)
 do{
 const randomNumber = Math.floor ( Math.random () * 7 + 1 );
@@ -44,3 +44,9 @@ let ans = await inquirer . prompt([
   
   
     
+    /*git init
+    git add README.md
+    git commit -m "first commit"
+    git branch -M main
+    git remote add origin https://github.com/sumbulNaz8/word-counter.git
+    git push -u origin main*/
